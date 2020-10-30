@@ -1,0 +1,94 @@
+<html>
+
+<head>
+  <title>Curso JavaScript</title>
+</head>
+
+<body>
+  <script>
+    // Funções ----------------------------------------------------------
+    function soma(num1, num2){ // Criando uma função de soma
+      var resultado = num1 + num2;
+      return resultado;
+    }
+
+    var resultado = soma(3, 12);
+
+    console.log("Resultado: ",resultado); // Incrementar com texto
+
+    //Condicionais If Else ------------------------------------------------
+
+    function retornaSexo(sexo){ // Criando uma função de soma
+      //M - Masculino
+      //F - Feminino
+      if(sexo === 'M'){
+        return "Masculino";
+      } else if(sexo === 'F'){
+        return "Feminino";
+      } else {
+        return "Outro";
+      }
+    }
+
+    var resultado = retornaSexo('F');
+
+    console.log("Sexo: ", resultado); // Incrementar com texto
+
+    //Condicionais Switch ------------------------------------------------
+
+    function retornaSexo2(sexo){
+      //Usando o switch
+      switch (sexo) {
+        case 'M':
+          return "Masculino";
+        case 'F':
+          return "Feminino";
+        default:
+          return "Outro";
+      }
+    }
+
+    var resultado = retornaSexo2('M');
+    console.log("Sexo: ", resultado);
+
+    //Operadores Lógicos -------------------------------------------------
+    //AND, OR, NOT
+
+    var sexo = 'M', idade = 23;
+
+    if(sexo === 'M' && idade >= 18){ //AND -> &&
+      console.log('OK');
+    }
+
+    if(sexo === 'M' || idade == 18){ //OR -> ||
+      console.log('OK');
+    }
+
+    if(sexo !== 'F'){ //NOT -> !==
+      console.log('OK');
+    }
+
+    //Resultado da condicional armazenada em uma variavel ----------------
+
+    var masculino;
+
+    if(sexo === 'M'){
+      masculino = true;
+    } else {
+      masculino = false;
+    }
+
+    console.log(masculino);
+
+    //Pode ser escrito assim tambem
+
+    var sexo = 'F';
+
+    var masculino = sexo === 'M';
+
+    console.log(masculino);
+
+    </script>
+</body>
+
+</html>

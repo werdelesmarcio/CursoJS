@@ -1,0 +1,65 @@
+<html>
+
+<head>
+  <title>Curso JavaScript</title>
+</head>
+
+<body>
+  <script>
+  //Condição ternária ---------------------------------------------------
+  //Caso padrão de uso do if
+
+  function retornaSexo(sexo){ // Criando uma função de soma
+    //M - Masculino
+    //F - Feminino
+    if(sexo === 'M'){
+      return "Masculino";
+    } else if(sexo === 'F'){
+      return "Feminino";
+    } else {
+      return "Outro";
+    }
+  }
+
+  var resultado = retornaSexo('F');
+
+  console.log("Sexo: ", resultado);
+
+  //Caso com o ternário
+  var sexo = 'M';
+
+  var retorno = (sexo === 'M') ? "Masculino" : "Feminino";
+
+  console.log("Sexo: ", retorno);
+
+  //Estruturas de Repetição --------------------------------------------
+
+  //Laço for
+  for (var i = 0; i <= 10; i++){
+    console.log("Código: ", i);
+  }
+
+  //Laço while
+  var j = 1024;
+  while (j > 16) {
+    console.log(j);
+    j /= 2;
+  }
+
+  //Intervalo e Timeout --------------------------------------------------
+  function exibeMensagem1(){
+    console.log("Mensagens");
+  }
+
+  function exibeMensagem2(){
+    console.log("Outra Mensagens");
+  }
+
+  setTimeout(exibeMensagem2, 5000) //Exibe uma vez com delay de 5 segundos
+  setInterval(exibeMensagem1, 2000); //Vai exibir a mensagem a cada 2 segundos
+
+
+  </script>
+</body>
+
+</html>
